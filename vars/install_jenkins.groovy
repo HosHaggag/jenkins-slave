@@ -7,6 +7,7 @@ def call(){
     stages {
         stage('Install-Nginx') {
             steps {
+                sh "ls -l"
                 sh "sudo yum -y update"
                 sh "sudo yum install -y nginx"
             }
