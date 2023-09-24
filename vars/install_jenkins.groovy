@@ -8,8 +8,8 @@ def call(){
         stage('Install-Nginx') {
             steps {
                 sh "ls -l"
-                sh "sudo yum -y update"
-                sh "sudo yum install -y nginx"
+                sh "sudo apt -y update"
+                sh "sudo apt install -y nginx"
             }
         }
         stage('Start-Nginx') {
